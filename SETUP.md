@@ -1,94 +1,64 @@
 # AI/ML Daily Learning Bot -- Setup Guide
-# Deployed via Hermes cron (local WSL session)
+
+Deployed via GitHub Actions (runs daily at 8 AM in the cloud).
+No need to keep your laptop on.
 
 ## Step 1: Create your Telegram Bot
 
 1. Open Telegram -> search for @BotFather
 2. Send: /newbot
-3. Choose a name: "AI ML Daily Tutor" (or anything)
-4. Choose a username: e.g. yourname_aiml_bot
-5. BotFather gives you a TOKEN -- save it
+3. Choose a name: `AIDailyTutor_bot` (or anything)
+4. BotFather gives you a TOKEN -- save it
 
 ## Step 2: Get your Chat ID
 
 1. Start a conversation with your new bot (send it any message)
 2. Open this URL in browser (replace YOUR_TOKEN):
    https://api.telegram.org/botYOUR_TOKEN/getUpdates
-3. Find "chat":{"id": XXXXXXXX} -- that's your CHAT_ID
+3. Find `"chat":{"id": XXXXXXXX}` -- that's your CHAT_ID
 
-## Step 3: Configure environment
+## Step 3: Add secrets to GitHub
 
-Copy the example env file and fill in your values:
+In your repo's Settings -> Secrets and variables -> Actions, add:
 
-```bash
-cp .env.example .env
-# Edit .env with your actual values:
-#   TELEGRAM_BOT_TOKEN=123456:ABC...
-#   TELEGRAM_CHAT_ID=123456789
-```
+| Secret | Value |
+|--------|-------|
+| `TELEGRAM_BOT_TOKEN` | The token from BotFather |
+| `TELEGRAM_CHAT_ID` | Your chat ID (numeric) |
 
-Never commit `.env` -- it's listed in `.gitignore`.
+Never commit these to the repo -- the workflow reads them from GitHub secrets.
 
-## Step 4: Install dependencies
+## Step 4: Trigger the workflow
 
-```bash
-pip install -r requirements.txt
-```
+The workflow runs automatically at 8 AM daily.
+You can also trigger it manually from the GitHub UI:
 
-## Step 5: Test manually
+1. Go to your repo -> Actions -> "Daily AI/ML Lesson" -> Run workflow
 
-```bash
-# Sets up current_day.txt at day 1 and sends Day 1 via Telegram
-python3 bot.py
+## How state works
 
-# Send a specific day (counter unchanged):
-python3 bot.py --day 1
-```
-
-## Step 6: Schedule with Hermes cron (8 AM daily)
-
-Use Hermes cron instead of system crontab. Create the job from the project directory:
-
-```bash
-cd ~/projects/ai-tools/ai-ml-daily-bot
-```
-
-Then ask Hermes:
-
-> Create a cron job named "ai-ml-daily-lesson" that runs at 8 AM daily.
-> It should cd to ~/projects/ai-tools/ai-ml-daily-bot and run `python3 bot.py`.
-> Enable only the terminal toolset. Deliver notifications to Telegram.
-
-Or set it up manually via `cronjob action='create'`:
-
-```
-schedule: "0 8 * * *"
-workdir: ~/projects/ai-tools/ai-ml-daily-bot
-prompt: Run `python3 bot.py`. Report: what day was sent, or if completed, or if error.
-deliver: telegram:<CHAT_ID>
-enabled_toolsets: ["terminal"]
-```
-
-The bot tracks progress in `current_day.txt` in the workdir.
-It sends the next lesson each day until day 30, then stops.
+The bot tracks progress in `current_day.txt`. After each successful send, the
+workflow commits the updated counter back to the repo. If a send fails, the
+counter is NOT incremented and it retries the next day.
 
 ## Manual controls
 
+Trigger a replay of any day from your terminal:
+
 ```bash
-# Re-send a specific day (counter unchanged):
 python3 bot.py --day 5
-
-# Check current progress:
-cat current_day.txt
-
-# Reset to start over:
-echo "1" > current_day.txt
 ```
 
-## Notes
+Env vars required for manual runs:
+```bash
+export TELEGRAM_BOT_TOKEN=***
+export TELEGRAM_CHAT_ID=***
+python3 bot.py --day 5
+```
 
-- 30 days total, one lesson per cron run
-- After Day 30, sends a completion message and stops
-- Logs go to bot.log in the project directory
-- If a send fails, the counter is NOT incremented -- it retries next run
-- State file (current_day.txt) is gitignored -- each machine tracks independently
+## Course structure
+
+- 30 days, one lesson per day
+- Covers: AI fundamentals -> ML -> Neural Networks -> Transformers ->
+  RAG -> Agents -> MLOps -> Ethics -> Enterprise AI
+- After Day 30 sends a completion message and stops silently

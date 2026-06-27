@@ -1474,20 +1474,25 @@ async def main() -> None:
     day = await get_current_day()
 
     if day > len(CURRICULUM):
-        log.info("Curriculum complete! All %d days sent.", len(CURRICULUM))
-        try:
-            await bot.send_message(
-                chat_id=TELEGRAM_CHAT_ID,
-                text=(
-                    "🎓 *AI/ML 30-Day Course Complete!*\n\n"
-                    "You've covered the full curriculum.\n"
-                    "Review any day by running: `python bot.py --day N`\n"
-                    "Reset to start over: delete `current_day.txt`"
-                ),
-                parse_mode="Markdown",
-            )
-        except TelegramError as exc:
-            log.error("Failed to send completion message: %s", exc)
+        if day == len(CURRICULUM) + 1:
+            # First time completing -- send congratulations once
+            log.info("Curriculum complete! All %d days sent.", len(CURRICULUM))
+            try:
+                await bot.send_message(
+                    chat_id=TELEGRAM_CHAT_ID,
+                    text=(
+                        "🎓 *AI/ML 30-Day Course Complete!*\n\n"
+                        "You've covered the full curriculum.\n"
+                        "Review any day by running: `python bot.py --day N`\n"
+                        "Reset to start over: delete `current_day.txt`"
+                    ),
+                    parse_mode="Markdown",
+                )
+            except TelegramError as exc:
+                log.error("Failed to send completion message: %s", exc)
+        else:
+            # Already completed -- no-op so GitHub Actions doesn't re-spam
+            log.debug("Curriculum already complete (day=%d). Nothing to do.", day)
         return
 
     success = await send_lesson(bot, day)

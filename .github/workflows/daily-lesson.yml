@@ -1,0 +1,32 @@
+name: Daily AI/ML Lesson
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 8 AM daily
+  workflow_dispatch:        # manual trigger via GitHub UI
+
+jobs:
+  send-lesson:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install python-telegram-bot python-dotenv
+
+      - name: Send today's lesson
+        run: python bot.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Persist state (commit day counter)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add current_day.txt
+          git diff --staged --quiet || git commit -m "chore: bump day counter [skip ci]"
+          git push
