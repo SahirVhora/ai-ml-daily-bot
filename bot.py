@@ -62,23 +62,23 @@ CURRICULUM = [
     {
         "day": 1,
         "title": "What is AI?",
-        "content": """🤖 *Day 1 — What is Artificial Intelligence?*
+        "content": """🤖 *Day 1 - What is Artificial Intelligence?*
 
 *Definition*
-AI is the simulation of human intelligence by machines — enabling them to reason, learn, problem-solve, perceive, and understand language.
+AI is the simulation of human intelligence by machines - enabling them to reason, learn, problem-solve, perceive, and understand language.
 
 *Three Tiers*
-• *Narrow AI* — Does one specific task extremely well (ChatGPT, image recognition, spam filters). Everything we have today.
-• *General AI (AGI)* — Matches human-level reasoning across any domain. Doesn't exist yet.
-• *Superintelligence* — Exceeds human intelligence across all domains. Theoretical.
+• *Narrow AI* - Does one specific task extremely well (ChatGPT, image recognition, spam filters). Everything we have today.
+• *General AI (AGI)* - Matches human-level reasoning across any domain. Doesn't exist yet.
+• *Superintelligence* - Exceeds human intelligence across all domains. Theoretical.
 
 *Key Milestones*
-• 1950 — Alan Turing proposes the Turing Test
-• 1956 — "Artificial Intelligence" coined at Dartmouth Conference
-• 1997 — Deep Blue beats world chess champion Kasparov
-• 2012 — Deep learning breakthrough (ImageNet)
-• 2017 — Transformer architecture invented (basis of all modern LLMs)
-• 2022 — ChatGPT launches, AI goes mainstream
+• 1950 - Alan Turing proposes the Turing Test
+• 1956 - "Artificial Intelligence" coined at Dartmouth Conference
+• 1997 - Deep Blue beats world chess champion Kasparov
+• 2012 - Deep learning breakthrough (ImageNet)
+• 2017 - Transformer architecture invented (basis of all modern LLMs)
+• 2022 - ChatGPT launches, AI goes mainstream
 
 *AI vs ML vs Deep Learning*
 Think of concentric circles:
@@ -95,10 +95,10 @@ Deep Learning is a subset of ML, which is a subset of AI.
     {
         "day": 2,
         "title": "What is Machine Learning?",
-        "content": """🧠 *Day 2 — What is Machine Learning?*
+        "content": """🧠 *Day 2 - What is Machine Learning?*
 
 *Definition*
-ML is teaching computers to learn from data — instead of explicitly programming every rule, you feed examples and let the algorithm figure out the pattern.
+ML is teaching computers to learn from data - instead of explicitly programming every rule, you feed examples and let the algorithm figure out the pattern.
 
 *The 3 Types*
 
@@ -130,49 +130,49 @@ Examples: AlphaGo, game-playing AI, robotics, self-driving cars
 Traditional programming: Rules + Data → Output
 Machine Learning: Data + Output → Rules (learned automatically)
 
-📌 *Tomorrow:* Data — the fuel of ML. Features, labels, and why data quality beats algorithm choice."""
+📌 *Tomorrow:* Data - the fuel of ML. Features, labels, and why data quality beats algorithm choice."""
     },
     {
         "day": 3,
-        "title": "Data — The Fuel of ML",
-        "content": """📊 *Day 3 — Data: The Fuel of Machine Learning*
+        "title": "Data - The Fuel of ML",
+        "content": """📊 *Day 3 - Data: The Fuel of Machine Learning*
 
 *Why data matters more than algorithms*
 A mediocre algorithm with great data beats a great algorithm with bad data. Every time.
 
 *Key Terminology*
 
-• *Dataset* — Your full collection of examples
-• *Feature (X)* — An input variable (age, salary, job title)
-• *Label (y)* — The output you're predicting (promoted: yes/no)
-• *Sample/Instance* — One row in your dataset
+• *Dataset* - Your full collection of examples
+• *Feature (X)* - An input variable (age, salary, job title)
+• *Label (y)* - The output you're predicting (promoted: yes/no)
+• *Sample/Instance* - One row in your dataset
 
 *The Three Splits*
-Never train and test on the same data — the model just memorises.
+Never train and test on the same data - the model just memorises.
 
-• *Training set* (~70%) — Model learns from this
-• *Validation set* (~15%) — Tune and compare models
-• *Test set* (~15%) — Final, untouched evaluation. Use once.
+• *Training set* (~70%) - Model learns from this
+• *Validation set* (~15%) - Tune and compare models
+• *Test set* (~15%) - Final, untouched evaluation. Use once.
 
 *Data Quality Problems*
-• *Missing values* — Need to impute or drop
-• *Outliers* — Extreme values that skew learning
-• *Class imbalance* — 99% not-fraud, 1% fraud → model learns to always say "not fraud"
-• *Data leakage* — Future information accidentally leaking into training data (silent killer)
+• *Missing values* - Need to impute or drop
+• *Outliers* - Extreme values that skew learning
+• *Class imbalance* - 99% not-fraud, 1% fraud → model learns to always say "not fraud"
+• *Data leakage* - Future information accidentally leaking into training data (silent killer)
 
 *Feature Engineering*
 Transforming raw data into useful features.
-Example: From a date field, extract day_of_week, is_weekend, month — each potentially more useful than the raw date.
+Example: From a date field, extract day_of_week, is_weekend, month - each potentially more useful than the raw date.
 
 *Real talk*
 In enterprise ML (your world), 80% of time is data prep. The algorithm is the easy part.
 
-📌 *Tomorrow:* Linear Regression — the simplest ML model and the foundation of everything."""
+📌 *Tomorrow:* Linear Regression - the simplest ML model and the foundation of everything."""
     },
     {
         "day": 4,
         "title": "Linear Regression",
-        "content": """📈 *Day 4 — Linear Regression & Gradient Descent*
+        "content": """📈 *Day 4 - Linear Regression & Gradient Descent*
 
 *What it does*
 Predicts a continuous number by fitting the best straight line through data.
@@ -187,7 +187,7 @@ Example: predict house price from square footage.
 
 Multiple features: `y = w₁x₁ + w₂x₂ + ... + b`
 
-*How does it "learn"? — Loss Functions*
+*How does it "learn"? - Loss Functions*
 The model measures how wrong it is using Mean Squared Error (MSE):
 `MSE = average of (predicted - actual)²`
 
@@ -212,12 +212,12 @@ How big each step is.
 *Key insight*
 Gradient descent is the engine behind almost ALL of modern ML and deep learning. Master this concept and everything else makes sense.
 
-📌 *Tomorrow:* Classification — when the answer isn't a number but a category."""
+📌 *Tomorrow:* Classification - when the answer isn't a number but a category."""
     },
     {
         "day": 5,
         "title": "Classification",
-        "content": """🎯 *Day 5 — Classification & Logistic Regression*
+        "content": """🎯 *Day 5 - Classification & Logistic Regression*
 
 *Classification vs Regression*
 • Regression → predict a number (price, temperature)
@@ -238,10 +238,10 @@ Everything on one side → Class A. Other side → Class B.
 *Evaluation Metrics*
 Accuracy alone is misleading (remember class imbalance from Day 3).
 
-• *Precision* — Of all predicted positives, how many were actually positive?
-• *Recall* — Of all actual positives, how many did we catch?
-• *F1 Score* — Harmonic mean of precision and recall
-• *Confusion Matrix* — True positives, false positives, true negatives, false negatives
+• *Precision* - Of all predicted positives, how many were actually positive?
+• *Recall* - Of all actual positives, how many did we catch?
+• *F1 Score* - Harmonic mean of precision and recall
+• *Confusion Matrix* - True positives, false positives, true negatives, false negatives
 
 *The Precision-Recall Tradeoff*
 • Cancer screening → maximise recall (catch every case, even false alarms)
@@ -251,12 +251,12 @@ Accuracy alone is misleading (remember class imbalance from Day 3).
 Not just binary. E.g., classify handwritten digits 0–9.
 Approaches: One-vs-Rest, Softmax (outputs probabilities for all classes, sums to 1).
 
-📌 *Tomorrow:* Overfitting vs Underfitting — the most common reason ML models fail in production."""
+📌 *Tomorrow:* Overfitting vs Underfitting - the most common reason ML models fail in production."""
     },
     {
         "day": 6,
         "title": "Overfitting vs Underfitting",
-        "content": """⚖️ *Day 6 — Overfitting, Underfitting & the Bias-Variance Tradeoff*
+        "content": """⚖️ *Day 6 - Overfitting, Underfitting & the Bias-Variance Tradeoff*
 
 *The core problem*
 A model that memorises training data is useless on new data.
@@ -276,26 +276,26 @@ Symptoms: low training error but HIGH test error.
 Fix: more data, simpler model, regularisation, dropout.
 
 *The Bias-Variance Tradeoff*
-• *Bias* — Error from wrong assumptions (underfitting)
-• *Variance* — Error from sensitivity to small fluctuations in training data (overfitting)
-• You can't minimise both simultaneously — find the sweet spot.
+• *Bias* - Error from wrong assumptions (underfitting)
+• *Variance* - Error from sensitivity to small fluctuations in training data (overfitting)
+• You can't minimise both simultaneously - find the sweet spot.
 
 *Fixes for Overfitting*
-• *More training data* — Best fix if available
-• *Regularisation* — L1 (Lasso), L2 (Ridge) — penalise large weights
-• *Dropout* — Randomly disable neurons during training (deep learning)
-• *Early stopping* — Stop training when validation error starts rising
-• *Cross-validation* — K-fold: train/test on K different splits, average results
+• *More training data* - Best fix if available
+• *Regularisation* - L1 (Lasso), L2 (Ridge) - penalise large weights
+• *Dropout* - Randomly disable neurons during training (deep learning)
+• *Early stopping* - Stop training when validation error starts rising
+• *Cross-validation* - K-fold: train/test on K different splits, average results
 
 *The golden rule*
 Always evaluate on data the model has never seen. If you touch the test set more than once, you're cheating.
 
-📌 *Tomorrow:* Week 1 review — consolidate everything before moving to algorithms."""
+📌 *Tomorrow:* Week 1 review - consolidate everything before moving to algorithms."""
     },
     {
         "day": 7,
         "title": "Week 1 Review",
-        "content": """🔁 *Day 7 — Week 1 Review & Self-Check*
+        "content": """🔁 *Day 7 - Week 1 Review & Self-Check*
 
 Consolidate before moving forward. Answer these without scrolling back:
 
@@ -322,7 +322,7 @@ Consolidate before moving forward. Answer these without scrolling back:
 1. Narrow AI does one task; AGI matches human reasoning across all domains.
 2. Supervised, Unsupervised, Reinforcement.
 3. Feature = input variable; Label = output you're predicting.
-4. To evaluate on data the model hasn't seen — prevent cheating.
+4. To evaluate on data the model hasn't seen - prevent cheating.
 5. Iteratively adjusts weights to minimise the loss function.
 6. Model can score 99% by always predicting the majority class.
 7. Underfitting = too simple (high bias); Overfitting = memorises noise (high variance).
@@ -331,12 +331,12 @@ Consolidate before moving forward. Answer these without scrolling back:
 *Week 2 Preview*
 Decision Trees → Random Forests → SVMs → Neural Networks → Backpropagation → Deep Learning
 
-📌 *Tomorrow:* Decision Trees & Random Forests — intuitive, powerful, and everywhere in enterprise ML."""
+📌 *Tomorrow:* Decision Trees & Random Forests - intuitive, powerful, and everywhere in enterprise ML."""
     },
     {
         "day": 8,
         "title": "Decision Trees & Random Forests",
-        "content": """🌳 *Day 8 — Decision Trees & Random Forests*
+        "content": """🌳 *Day 8 - Decision Trees & Random Forests*
 
 *Decision Trees*
 A flowchart-like model that splits data based on feature values.
@@ -352,49 +352,49 @@ Each split maximises information gain (reduces uncertainty).
 Measured by: Gini Impurity or Entropy.
 
 *Strengths*
-• Highly interpretable — you can explain every decision
+• Highly interpretable - you can explain every decision
 • Handles numerical and categorical data
 • No feature scaling needed
 
 *Weakness*
-• Prone to overfitting — grows too deep and memorises training data
+• Prone to overfitting - grows too deep and memorises training data
 
 *Random Forests*
 Fix overfitting by building MANY trees and averaging their predictions.
 
 How it works:
 1. Take N random samples of the training data (with replacement = "bagging")
-2. For each sample, train a decision tree — but only consider a random subset of features at each split
+2. For each sample, train a decision tree - but only consider a random subset of features at each split
 3. For prediction: take majority vote (classification) or average (regression)
 
 *Why it works*
 Each tree is slightly different → errors are random and cancel out → ensemble is more accurate and robust than any single tree.
 
 *Key hyperparameters*
-• `n_estimators` — number of trees (more = better up to a point)
-• `max_depth` — limits tree depth (controls overfitting)
-• `max_features` — features considered at each split
+• `n_estimators` - number of trees (more = better up to a point)
+• `max_depth` - limits tree depth (controls overfitting)
+• `max_features` - features considered at each split
 
 *Still widely used in production*
-Random Forests power many real-world enterprise systems — interpretable, robust, fast to train, no GPU needed.
+Random Forests power many real-world enterprise systems - interpretable, robust, fast to train, no GPU needed.
 
-📌 *Tomorrow:* Support Vector Machines — finding the widest possible margin between classes."""
+📌 *Tomorrow:* Support Vector Machines - finding the widest possible margin between classes."""
     },
     {
         "day": 9,
         "title": "Support Vector Machines",
-        "content": """🎯 *Day 9 — Support Vector Machines (SVMs)*
+        "content": """🎯 *Day 9 - Support Vector Machines (SVMs)*
 
 *Core Idea*
 Find the decision boundary (hyperplane) that maximises the margin between classes.
 
-Not just any line that separates — the one with the *widest gap*.
+Not just any line that separates - the one with the *widest gap*.
 
 *Key Concepts*
 
 *Support Vectors*
 The data points closest to the decision boundary.
-These are the only points that matter — removing others doesn't change the boundary.
+These are the only points that matter - removing others doesn't change the boundary.
 
 *Margin*
 The distance between the boundary and the nearest support vectors.
@@ -406,12 +406,12 @@ SVM maximises this margin → better generalisation to new data.
 
 *The Kernel Trick*
 What if data isn't linearly separable?
-Map data to higher dimensions where it becomes separable — without computing the transformation explicitly.
+Map data to higher dimensions where it becomes separable - without computing the transformation explicitly.
 
 Common kernels:
-• Linear — straight-line boundary
-• RBF (Radial Basis Function) — most common, handles complex boundaries
-• Polynomial — curved boundaries
+• Linear - straight-line boundary
+• RBF (Radial Basis Function) - most common, handles complex boundaries
+• Polynomial - curved boundaries
 
 *When to use SVMs*
 ✅ High-dimensional data (text classification)
@@ -421,22 +421,22 @@ Common kernels:
 ❌ Noisy data with overlapping classes
 
 *Historical note*
-SVMs dominated ML from ~1995–2012. Now mostly replaced by deep learning and gradient boosting (XGBoost) for most tasks — but still excellent for certain problems.
+SVMs dominated ML from ~1995–2012. Now mostly replaced by deep learning and gradient boosting (XGBoost) for most tasks - but still excellent for certain problems.
 
-📌 *Tomorrow:* k-NN and k-Means — two simple but powerful algorithms for classification and clustering."""
+📌 *Tomorrow:* k-NN and k-Means - two simple but powerful algorithms for classification and clustering."""
     },
     {
         "day": 10,
         "title": "k-NN and k-Means",
-        "content": """📍 *Day 10 — k-Nearest Neighbours & k-Means Clustering*
+        "content": """📍 *Day 10 - k-Nearest Neighbours & k-Means Clustering*
 
 ━━━━━━━━━━━━━━━━━━━━
-*k-Nearest Neighbours (k-NN) — Supervised*
+*k-Nearest Neighbours (k-NN) - Supervised*
 ━━━━━━━━━━━━━━━━━━━━
 
 *Idea*: To classify a new point, find the k most similar training examples and take a majority vote.
 
-No training phase — just memorise all data. Classification happens at query time.
+No training phase - just memorise all data. Classification happens at query time.
 
 *How similarity is measured*: Euclidean distance (straight-line distance between points in feature space).
 
@@ -449,7 +449,7 @@ No training phase — just memorise all data. Classification happens at query ti
 *Weaknesses*: Slow at prediction (searches all training data), poor on high-dimensional data (curse of dimensionality).
 
 ━━━━━━━━━━━━━━━━━━━━
-*k-Means Clustering — Unsupervised*
+*k-Means Clustering - Unsupervised*
 ━━━━━━━━━━━━━━━━━━━━
 
 *Idea*: Group data into k clusters where each point belongs to the nearest cluster centre (centroid).
@@ -460,22 +460,22 @@ No training phase — just memorise all data. Classification happens at query ti
 3. Move each centroid to the mean of its assigned points
 4. Repeat 2–3 until centroids stop moving
 
-*Choosing k*: The Elbow Method — plot inertia (within-cluster variance) vs k; pick the "elbow" where gains diminish.
+*Choosing k*: The Elbow Method - plot inertia (within-cluster variance) vs k; pick the "elbow" where gains diminish.
 
 *Use cases*: Customer segmentation, document clustering, anomaly detection, image compression.
 
 *Weakness*: Assumes spherical clusters of similar size. Fails on irregular shapes.
 
-📌 *Tomorrow:* Neural Networks — how the brain inspired the most powerful class of ML models."""
+📌 *Tomorrow:* Neural Networks - how the brain inspired the most powerful class of ML models."""
     },
     {
         "day": 11,
         "title": "Neural Networks",
-        "content": """🧬 *Day 11 — Neural Networks*
+        "content": """🧬 *Day 11 - Neural Networks*
 
 *The Biological Inspiration*
 Human brain: ~86 billion neurons, each connected to thousands of others.
-Artificial neural networks loosely mimic this — but the math matters more than the biology.
+Artificial neural networks loosely mimic this - but the math matters more than the biology.
 
 *The Building Block: A Neuron (Perceptron)*
 1. Takes multiple inputs (x₁, x₂, x₃...)
@@ -486,33 +486,33 @@ Artificial neural networks loosely mimic this — but the math matters more than
 
 `output = activation(w₁x₁ + w₂x₂ + ... + b)`
 
-*Activation Functions — Why They Matter*
+*Activation Functions - Why They Matter*
 Without them, the whole network collapses to a single linear equation.
-Activations introduce non-linearity — allowing networks to learn complex patterns.
+Activations introduce non-linearity - allowing networks to learn complex patterns.
 
-• *ReLU* — `max(0, x)` — most common in hidden layers, fast, works well
-• *Sigmoid* — squashes to (0,1) — used in output for binary classification
-• *Softmax* — squashes to probabilities summing to 1 — multi-class output
-• *Tanh* — squashes to (-1,1) — used in RNNs
+• *ReLU* - `max(0, x)` - most common in hidden layers, fast, works well
+• *Sigmoid* - squashes to (0,1) - used in output for binary classification
+• *Softmax* - squashes to probabilities summing to 1 - multi-class output
+• *Tanh* - squashes to (-1,1) - used in RNNs
 
 *Network Architecture*
-• *Input layer* — one neuron per feature
-• *Hidden layers* — where learning happens (can be many)
-• *Output layer* — one neuron per class (or one for regression)
+• *Input layer* - one neuron per feature
+• *Hidden layers* - where learning happens (can be many)
+• *Output layer* - one neuron per class (or one for regression)
 
 *Depth vs Width*
 • More layers (depth) → learns more abstract representations
 • More neurons per layer (width) → captures more patterns at each level
 
 *Universal Approximation Theorem*
-A neural network with even one hidden layer can approximate any continuous function — given enough neurons. This is the theoretical basis for why NNs work.
+A neural network with even one hidden layer can approximate any continuous function - given enough neurons. This is the theoretical basis for why NNs work.
 
-📌 *Tomorrow:* Backpropagation — how neural networks actually learn."""
+📌 *Tomorrow:* Backpropagation - how neural networks actually learn."""
     },
     {
         "day": 12,
         "title": "Backpropagation",
-        "content": """⚙️ *Day 12 — Backpropagation*
+        "content": """⚙️ *Day 12 - Backpropagation*
 
 *The Problem*
 A neural network has millions of weights. How do you adjust all of them to reduce error?
@@ -546,14 +546,14 @@ Early layers barely update → network doesn't learn.
 Solution: ReLU activation, batch normalisation, residual connections (skip connections in ResNets).
 
 *Key insight*
-Backprop is the reason deep learning works. It's not magic — it's just efficient calculus applied at scale. Modern frameworks (PyTorch, TensorFlow) compute all of this automatically via *autograd*.
+Backprop is the reason deep learning works. It's not magic - it's just efficient calculus applied at scale. Modern frameworks (PyTorch, TensorFlow) compute all of this automatically via *autograd*.
 
-📌 *Tomorrow:* Deep Learning — what "deep" actually means and why it changed everything."""
+📌 *Tomorrow:* Deep Learning - what "deep" actually means and why it changed everything."""
     },
     {
         "day": 13,
         "title": "Deep Learning",
-        "content": """🚀 *Day 13 — Deep Learning*
+        "content": """🚀 *Day 13 - Deep Learning*
 
 *What makes it "deep"?*
 Simply: many layers. A "shallow" network has 1–2 hidden layers. "Deep" means 10, 50, 100+ layers.
@@ -567,41 +567,41 @@ Each layer learns increasingly abstract representations:
 • Layer 3 → parts (eyes, wheels)
 • Layer 4+ → objects, concepts
 
-You don't hand-engineer features — the network learns them from raw data.
+You don't hand-engineer features - the network learns them from raw data.
 
 *Why Deep Learning Took Off (2012+)*
 Three things aligned:
-1. *Big Data* — internet-scale datasets (ImageNet: 1.2M images)
-2. *GPUs* — parallel computation made training feasible
-3. *Better algorithms* — ReLU, dropout, batch norm, better initialisation
+1. *Big Data* - internet-scale datasets (ImageNet: 1.2M images)
+2. *GPUs* - parallel computation made training feasible
+3. *Better algorithms* - ReLU, dropout, batch norm, better initialisation
 
 *Major Deep Learning Architectures*
-• *CNNs* — images and spatial data (Day 15)
-• *RNNs/LSTMs* — sequences and time series (Day 16)
-• *Transformers* — language, vision, everything now (Day 17)
+• *CNNs* - images and spatial data (Day 15)
+• *RNNs/LSTMs* - sequences and time series (Day 16)
+• *Transformers* - language, vision, everything now (Day 17)
 
 *Frameworks*
-• *PyTorch* — dominant in research, flexible
-• *TensorFlow/Keras* — dominant in production deployment
+• *PyTorch* - dominant in research, flexible
+• *TensorFlow/Keras* - dominant in production deployment
 • Both have automatic differentiation (no manual backprop)
 
 *The Hardware Reality*
 Training large models requires GPUs or TPUs.
 Inference (using a trained model) can run on CPU or even mobile.
-This is why cloud AI services (AWS, Azure, GCP) exist — most companies don't own the hardware.
+This is why cloud AI services (AWS, Azure, GCP) exist - most companies don't own the hardware.
 
 *Deep Learning ≠ Always Better*
 For tabular/structured data (your SAP world), gradient boosting (XGBoost, LightGBM) often beats deep learning.
 Deep learning wins on: images, text, audio, video, unstructured data.
 
-📌 *Tomorrow:* Week 2 review — then Week 3 goes into the modern architectures driving today's AI."""
+📌 *Tomorrow:* Week 2 review - then Week 3 goes into the modern architectures driving today's AI."""
     },
     {
         "day": 14,
         "title": "Week 2 Review",
-        "content": """🔁 *Day 14 — Week 2 Review*
+        "content": """🔁 *Day 14 - Week 2 Review*
 
-Self-check before Week 3 (the exciting stuff — Transformers, LLMs, RAG).
+Self-check before Week 3 (the exciting stuff - Transformers, LLMs, RAG).
 
 *Quick-fire Questions*
 
@@ -618,31 +618,31 @@ Self-check before Week 3 (the exciting stuff — Transformers, LLMs, RAG).
 
 *Answers*
 1. Maximises information gain (minimises Gini impurity / entropy).
-2. Training each tree on a random data sample — reduces variance, prevents overfitting.
+2. Training each tree on a random data sample - reduces variance, prevents overfitting.
 3. The margin between classes (distance from boundary to nearest support vectors).
 4. Maps non-linearly separable data to higher dimensions where it becomes separable.
 5. Too small → overfits (sensitive to noise). Too large → underfits (too smooth).
 6. Introduces non-linearity so the network can learn complex patterns.
 7. Forward pass (prediction) and backward pass (backpropagation of gradients).
-8. Gradients shrink to near-zero in early layers — those layers stop learning.
+8. Gradients shrink to near-zero in early layers - those layers stop learning.
 9. Big Data, GPUs, better algorithms (ReLU, dropout, batch norm).
-10. Structured/tabular data — gradient boosting often wins there.
+10. Structured/tabular data - gradient boosting often wins there.
 
 *Week 3 Preview*
 CNNs → RNNs/LSTMs → Transformers → LLMs → Embeddings → RAG
 
 This is where it gets directly relevant to the tools you build.
 
-📌 *Tomorrow:* CNNs — how machines see and understand images."""
+📌 *Tomorrow:* CNNs - how machines see and understand images."""
     },
     {
         "day": 15,
         "title": "Convolutional Neural Networks",
-        "content": """👁️ *Day 15 — Convolutional Neural Networks (CNNs)*
+        "content": """👁️ *Day 15 - Convolutional Neural Networks (CNNs)*
 
 *The Problem with Regular Neural Networks for Images*
 A 224×224 image = 150,528 pixels × 3 colour channels = 451,584 inputs.
-A fully connected layer would have hundreds of millions of parameters. Impractical — and it ignores spatial structure.
+A fully connected layer would have hundreds of millions of parameters. Impractical - and it ignores spatial structure.
 
 *The CNN Solution*
 Instead of connecting every neuron to every pixel, use:
@@ -667,9 +667,9 @@ After several conv+pool blocks, flatten and pass through regular neural network 
 • Deep layers → object parts, faces, wheels, text
 
 *Famous Architectures*
-• LeNet (1998) — digit recognition, first practical CNN
-• AlexNet (2012) — ImageNet breakthrough
-• VGG, ResNet, EfficientNet — increasingly powerful
+• LeNet (1998) - digit recognition, first practical CNN
+• AlexNet (2012) - ImageNet breakthrough
+• VGG, ResNet, EfficientNet - increasingly powerful
 • ResNet introduced skip connections → solved vanishing gradient for very deep networks
 
 *Beyond Images*
@@ -678,20 +678,20 @@ CNNs work on anything with spatial/local structure:
 • Audio spectrograms
 • Time-series data
 
-📌 *Tomorrow:* RNNs and LSTMs — how AI handles sequences: text, time series, speech."""
+📌 *Tomorrow:* RNNs and LSTMs - how AI handles sequences: text, time series, speech."""
     },
     {
         "day": 16,
         "title": "RNNs and LSTMs",
-        "content": """🔄 *Day 16 — RNNs & LSTMs: Sequence Models*
+        "content": """🔄 *Day 16 - RNNs & LSTMs: Sequence Models*
 
 *Why Standard Networks Fail on Sequences*
 "The cat sat on the ___"
 To predict "mat", you need context from earlier in the sentence.
-Regular neural networks have no memory — each input is independent.
+Regular neural networks have no memory - each input is independent.
 
 *Recurrent Neural Networks (RNNs)*
-Process sequences by maintaining a hidden state — a "memory" passed from step to step.
+Process sequences by maintaining a hidden state - a "memory" passed from step to step.
 
 At each time step:
 `h_t = activation(W_h × h_(t-1) + W_x × x_t + b)`
@@ -700,20 +700,20 @@ The hidden state h_t captures everything seen so far.
 
 *The Problem: Vanishing Gradients Over Long Sequences*
 For long sequences, gradients from early steps shrink to near zero by the time backprop reaches them. The network can't learn long-range dependencies.
-("The cat that sat on the mat near the window was ___" — "cat" is far back)
+("The cat that sat on the mat near the window was ___" - "cat" is far back)
 
-*LSTMs — Long Short-Term Memory*
+*LSTMs - Long Short-Term Memory*
 Introduced in 1997. Solve the vanishing gradient problem with a gating mechanism:
 
-• *Forget gate* — what to erase from memory
-• *Input gate* — what new information to add
-• *Output gate* — what to output at this step
-• *Cell state* — the long-term memory highway (gradients flow without shrinking)
+• *Forget gate* - what to erase from memory
+• *Input gate* - what new information to add
+• *Output gate* - what to output at this step
+• *Cell state* - the long-term memory highway (gradients flow without shrinking)
 
 LSTMs can remember information from hundreds of steps back.
 
 *GRU (Gated Recurrent Unit)*
-Simplified LSTM — fewer parameters, similar performance, faster to train.
+Simplified LSTM - fewer parameters, similar performance, faster to train.
 
 *Applications*
 • Text generation, translation, sentiment analysis
@@ -726,15 +726,15 @@ LSTMs dominated NLP from ~2014–2017.
 Then Transformers arrived (2017) and made them largely obsolete for language tasks.
 But LSTMs still excel at streaming time-series where transformer's full-context attention is overkill.
 
-📌 *Tomorrow:* Transformers — the architecture that powers Claude, GPT, Gemini, and everything modern AI."""
+📌 *Tomorrow:* Transformers - the architecture that powers Claude, GPT, Gemini, and everything modern AI."""
     },
     {
         "day": 17,
         "title": "Transformers",
-        "content": """⚡ *Day 17 — Transformers: The Architecture Behind Modern AI*
+        "content": """⚡ *Day 17 - Transformers: The Architecture Behind Modern AI*
 
 *The 2017 Paper That Changed Everything*
-"Attention Is All You Need" — Google, 2017.
+"Attention Is All You Need" - Google, 2017.
 Eliminated recurrence entirely. Processes sequences in parallel. Scales to massive datasets.
 
 *The Core Mechanism: Self-Attention*
@@ -745,9 +745,9 @@ What does "it" refer to? Self-attention figures out "it" → "animal" with high 
 
 *How Self-Attention Works (Simplified)*
 For each word, compute three vectors:
-• *Query (Q)* — "what am I looking for?"
-• *Key (K)* — "what do I contain?"
-• *Value (V)* — "what do I contribute?"
+• *Query (Q)* - "what am I looking for?"
+• *Key (K)* - "what do I contain?"
+• *Value (V)* - "what do I contribute?"
 
 Attention score = Q × Kᵀ (softmaxed) → weighted sum of Values
 
@@ -756,11 +756,11 @@ Run self-attention multiple times in parallel with different learned projections
 Each head learns different relationships (syntactic, semantic, coreference).
 
 *Positional Encoding*
-Unlike RNNs, Transformers process all positions simultaneously — so position info must be injected explicitly via positional encodings added to word embeddings.
+Unlike RNNs, Transformers process all positions simultaneously - so position info must be injected explicitly via positional encodings added to word embeddings.
 
 *The Transformer Architecture*
-• *Encoder* — reads input, builds rich contextual representations
-• *Decoder* — generates output autoregressively (one token at a time)
+• *Encoder* - reads input, builds rich contextual representations
+• *Decoder* - generates output autoregressively (one token at a time)
 • Original: Encoder-Decoder (translation)
 • BERT: Encoder only (understanding)
 • GPT/Claude: Decoder only (generation)
@@ -770,12 +770,12 @@ Unlike RNNs, Transformers process all positions simultaneously — so position i
 • Long-range dependencies handled natively
 • Scales extremely well: more data + bigger model = better performance
 
-📌 *Tomorrow:* Large Language Models — how GPT, Claude, and Gemini are actually built and trained."""
+📌 *Tomorrow:* Large Language Models - how GPT, Claude, and Gemini are actually built and trained."""
     },
     {
         "day": 18,
         "title": "Large Language Models",
-        "content": """🌐 *Day 18 — Large Language Models (LLMs)*
+        "content": """🌐 *Day 18 - Large Language Models (LLMs)*
 
 *What is an LLM?*
 A very large Transformer (decoder-only) trained to predict the next token given all previous tokens.
@@ -785,7 +785,7 @@ That's it. The emergent capabilities (reasoning, coding, translation) arise from
 
 *Phase 1: Pre-training*
 • Dataset: trillions of tokens from the internet, books, code, papers
-• Objective: predict the next token (self-supervised — no labels needed)
+• Objective: predict the next token (self-supervised - no labels needed)
 • Duration: weeks to months on thousands of GPUs
 • Result: a "base model" with broad world knowledge
 
@@ -797,7 +797,7 @@ That's it. The emergent capabilities (reasoning, coding, translation) arise from
 • Humans rank pairs of model responses
 • Train a reward model on these rankings
 • Use RL (PPO) to optimise the LLM toward higher-ranked responses
-• This is what makes the model "aligned" — helpful, harmless, honest
+• This is what makes the model "aligned" - helpful, harmless, honest
 
 *Scale Laws*
 More parameters + more data + more compute = better performance.
@@ -814,19 +814,19 @@ Abilities that appear suddenly at sufficient scale:
 • GPT-4, GPT-4o (OpenAI)
 • Claude 3.5/4 (Anthropic)
 • Gemini (Google)
-• Llama 3 (Meta — open source)
+• Llama 3 (Meta - open source)
 • Mistral, Qwen, DeepSeek (open/efficient models)
 
 *Context Window*
 How many tokens the model can "see" at once.
 Claude: up to 200K tokens. GPT-4: 128K. This matters enormously for long documents.
 
-📌 *Tomorrow:* Embeddings and Vector Databases — how AI understands meaning and similarity."""
+📌 *Tomorrow:* Embeddings and Vector Databases - how AI understands meaning and similarity."""
     },
     {
         "day": 19,
         "title": "Embeddings & Vector Databases",
-        "content": """🔢 *Day 19 — Embeddings & Vector Databases*
+        "content": """🔢 *Day 19 - Embeddings & Vector Databases*
 
 *The Problem*
 Computers work with numbers. Text, images, and code don't have inherent numerical structure.
@@ -857,25 +857,25 @@ The query: "Find the 10 vectors most similar to this query vector."
 Similarity metric: cosine similarity or dot product.
 
 *Key Vector DBs*
-• *Pinecone* — fully managed, popular
-• *Weaviate* — open source, supports hybrid search
-• *Qdrant* — open source, Rust-based, fast
-• *pgvector* — PostgreSQL extension (easiest if you already run Postgres)
-• *ChromaDB* — lightweight, perfect for local/small projects
+• *Pinecone* - fully managed, popular
+• *Weaviate* - open source, supports hybrid search
+• *Qdrant* - open source, Rust-based, fast
+• *pgvector* - PostgreSQL extension (easiest if you already run Postgres)
+• *ChromaDB* - lightweight, perfect for local/small projects
 
 *Why This Matters for Your Stack*
-sf-position-integrity-checker uses SQLite. Adding pgvector or ChromaDB would let you do semantic search across SF metadata, job descriptions, or position hierarchies — far more powerful than keyword matching.
+sf-position-integrity-checker uses SQLite. Adding pgvector or ChromaDB would let you do semantic search across SF metadata, job descriptions, or position hierarchies - far more powerful than keyword matching.
 
-📌 *Tomorrow:* RAG — Retrieval-Augmented Generation. The architecture behind knowledge-grounded AI."""
+📌 *Tomorrow:* RAG - Retrieval-Augmented Generation. The architecture behind knowledge-grounded AI."""
     },
     {
         "day": 20,
         "title": "Retrieval-Augmented Generation (RAG)",
-        "content": """📚 *Day 20 — Retrieval-Augmented Generation (RAG)*
+        "content": """📚 *Day 20 - Retrieval-Augmented Generation (RAG)*
 
 *The Problem with Pure LLMs*
-• Knowledge cutoff — don't know recent events
-• Hallucination — confidently wrong on specific facts
+• Knowledge cutoff - don't know recent events
+• Hallucination - confidently wrong on specific facts
 • No access to your private data (HR records, internal docs)
 • Can't cite sources
 
@@ -905,20 +905,20 @@ Combine a retrieval system with an LLM:
 • Overlap between chunks → prevents cutting context at bad boundaries
 
 *Advanced RAG Techniques*
-• *Hybrid search* — combine vector search + keyword search (BM25)
-• *Reranking* — second model re-scores top results for relevance
-• *HyDE* — generate a hypothetical answer first, then search for similar documents
-• *Agentic RAG* — LLM decides what to retrieve and when
+• *Hybrid search* - combine vector search + keyword search (BM25)
+• *Reranking* - second model re-scores top results for relevance
+• *HyDE* - generate a hypothetical answer first, then search for similar documents
+• *Agentic RAG* - LLM decides what to retrieve and when
 
 *Direct Application to Your Work*
 A RAG system over your SF EC documentation, migration runbooks, and cutover plans would let any team member query: "What's the fallback procedure for KR go-live?" and get an accurate, cited answer from your actual documents.
 
-📌 *Tomorrow:* Prompt Engineering — getting the best from LLMs. The most immediately applicable skill."""
+📌 *Tomorrow:* Prompt Engineering - getting the best from LLMs. The most immediately applicable skill."""
     },
     {
         "day": 21,
         "title": "Week 3 Review",
-        "content": """🔁 *Day 21 — Week 3 Review*
+        "content": """🔁 *Day 21 - Week 3 Review*
 
 *Quick-fire Questions*
 
@@ -935,29 +935,29 @@ A RAG system over your SF EC documentation, migration runbooks, and cutover plan
 
 *Answers*
 1. Slides across the input detecting one specific local feature (edge, texture, pattern).
-2. Long-range dependencies — LSTMs can remember information from much earlier in the sequence.
+2. Long-range dependencies - LSTMs can remember information from much earlier in the sequence.
 3. Query (what I'm looking for), Key (what I contain), Value (what I contribute).
 4. Processes all positions simultaneously; RNNs are sequential (each step depends on previous).
 5. Pre-training (next token prediction), SFT (instruction following), RLHF (alignment).
 6. Similar meaning → similar vectors (close together in embedding space).
 7. Any two of: Pinecone, Weaviate, Qdrant, pgvector, ChromaDB.
 8. Indexing (embed + store documents) and Querying (retrieve relevant chunks, generate answer).
-9. LLM answers from retrieved facts rather than parametric memory — grounded in real documents.
+9. LLM answers from retrieved facts rather than parametric memory - grounded in real documents.
 10. Maximum tokens the model can process in one call (its "working memory").
 
 *Week 4 Preview*
 Prompt Engineering → AI Agents → MLOps → AI Ethics → Generative AI → AI in Enterprise → RLHF → Frontier Models → Your Personal Learning Path
 
-📌 *Tomorrow:* Prompt Engineering — the most immediately useful skill in the AI toolkit."""
+📌 *Tomorrow:* Prompt Engineering - the most immediately useful skill in the AI toolkit."""
     },
     {
         "day": 22,
         "title": "Prompt Engineering",
-        "content": """✍️ *Day 22 — Prompt Engineering*
+        "content": """✍️ *Day 22 - Prompt Engineering*
 
 *What it is*
 The craft of designing inputs to LLMs to get reliably excellent outputs.
-Not magic — structured communication with a probabilistic system.
+Not magic - structured communication with a probabilistic system.
 
 *Core Techniques*
 
@@ -986,7 +986,7 @@ Structures output for programmatic use.
 
 *7. Decomposition*
 Break complex tasks into sub-prompts.
-Don't ask for a full migration plan in one shot — ask for risks first, then mitigations, then timeline.
+Don't ask for a full migration plan in one shot - ask for risks first, then mitigations, then timeline.
 
 *System vs User Prompts*
 • System prompt → persistent instructions, persona, constraints
@@ -996,27 +996,27 @@ Don't ask for a full migration plan in one shot — ask for risks first, then mi
 System prompt (behaviour) + Retrieved context (RAG) + Conversation history + User message = what the LLM sees.
 
 *Meta-skill*
-You already do this intuitively — your mega-prompt, output-heavy style is applied prompt engineering.
+You already do this intuitively - your mega-prompt, output-heavy style is applied prompt engineering.
 
-📌 *Tomorrow:* AI Agents — autonomous systems that plan, use tools, and execute multi-step tasks."""
+📌 *Tomorrow:* AI Agents - autonomous systems that plan, use tools, and execute multi-step tasks."""
     },
     {
         "day": 23,
         "title": "AI Agents",
-        "content": """🤖 *Day 23 — AI Agents & Agentic Systems*
+        "content": """🤖 *Day 23 - AI Agents & Agentic Systems*
 
 *What is an AI Agent?*
-An LLM that doesn't just respond — it plans, takes actions, observes results, and iterates until a goal is achieved.
+An LLM that doesn't just respond - it plans, takes actions, observes results, and iterates until a goal is achieved.
 
 Standard LLM: question → answer (one shot)
 Agent: goal → plan → action → observe → replan → action → ... → result
 
 *Core Components*
 
-• *Brain (LLM)* — Reasoning, planning, decision-making
-• *Tools* — Functions the agent can call (search, code execution, API calls, file I/O)
-• *Memory* — Short-term (context window) + long-term (vector DB or files)
-• *Orchestrator* — Loop that runs: think → act → observe → repeat
+• *Brain (LLM)* - Reasoning, planning, decision-making
+• *Tools* - Functions the agent can call (search, code execution, API calls, file I/O)
+• *Memory* - Short-term (context window) + long-term (vector DB or files)
+• *Orchestrator* - Loop that runs: think → act → observe → repeat
 
 *ReAct Pattern (Reason + Act)*
 The dominant agent framework:
@@ -1040,20 +1040,20 @@ Multiple specialised agents collaborating:
 • Critic agent → reviews outputs
 
 *Your Hermes Setup*
-Hermes IS an agent framework — always-on Oracle Cloud instance orchestrating tasks.
+Hermes IS an agent framework - always-on Oracle Cloud instance orchestrating tasks.
 Adding tool use (SF API calls, GitHub Actions triggers, calendar lookups) turns it into a proper autonomous agent.
 
 *Challenges*
-• Reliability — agents can get stuck in loops
-• Cost — many LLM calls per task
-• Safety — agents taking real-world actions need careful guardrails
+• Reliability - agents can get stuck in loops
+• Cost - many LLM calls per task
+• Safety - agents taking real-world actions need careful guardrails
 
-📌 *Tomorrow:* MLOps — deploying and maintaining ML models in production."""
+📌 *Tomorrow:* MLOps - deploying and maintaining ML models in production."""
     },
     {
         "day": 24,
         "title": "MLOps",
-        "content": """⚙️ *Day 24 — MLOps: ML in Production*
+        "content": """⚙️ *Day 24 - MLOps: ML in Production*
 
 *The Gap*
 Building a model in a notebook is easy. Keeping it accurate, available, and trustworthy in production for 2 years is hard.
@@ -1086,25 +1086,25 @@ Tools: BentoML, TorchServe, Triton, SageMaker
 *4. Model Monitoring*
 Models degrade silently in production.
 Monitor for:
-• *Data drift* — input distribution changes vs training data
-• *Concept drift* — relationship between features and labels changes
-• *Performance drift* — accuracy drops on new data
+• *Data drift* - input distribution changes vs training data
+• *Concept drift* - relationship between features and labels changes
+• *Performance drift* - accuracy drops on new data
 • *Latency and error rates*
 
 *5. Feature Stores*
-Centralised repository for computed features — ensures training and serving use identical feature computation.
+Centralised repository for computed features - ensures training and serving use identical feature computation.
 Tools: Feast, Tecton, Hopsworks
 
 *The Production Reality*
 Most ML models never reach production. Of those that do, most degrade within months without active monitoring.
 MLOps is what separates ML experiments from ML products.
 
-📌 *Tomorrow:* AI Ethics, Bias, and Safety — the non-negotiable layer."""
+📌 *Tomorrow:* AI Ethics, Bias, and Safety - the non-negotiable layer."""
     },
     {
         "day": 25,
         "title": "AI Ethics & Safety",
-        "content": """⚖️ *Day 25 — AI Ethics, Bias & Safety*
+        "content": """⚖️ *Day 25 - AI Ethics, Bias & Safety*
 
 *Why it matters technically, not just morally*
 Biased models create legal liability, poor products, and erode user trust.
@@ -1114,7 +1114,7 @@ Understanding this makes you a better AI engineer.
 *Types of Bias*
 
 *Data Bias*
-Training data reflects historical human decisions — which contain historical discrimination.
+Training data reflects historical human decisions - which contain historical discrimination.
 Example: CV screening model trained on past hires → perpetuates hiring biases.
 
 *Representation Bias*
@@ -1123,7 +1123,7 @@ Example: facial recognition failing on darker skin tones (trained mostly on ligh
 
 *Measurement Bias*
 Proxy metrics don't capture what you actually care about.
-Example: using arrest rates as a crime proxy — reflects policing patterns, not actual crime.
+Example: using arrest rates as a crime proxy - reflects policing patterns, not actual crime.
 
 *Amplification Bias*
 Models learn and amplify correlations in data.
@@ -1136,39 +1136,39 @@ Models learn and amplify correlations in data.
 You usually can't optimise all simultaneously.
 
 *AI Safety*
-• *Alignment* — ensuring AI does what humans actually want (not just what we specified)
-• *Robustness* — behaving correctly on unusual inputs, adversarial attacks
-• *Interpretability* — understanding WHY a model made a decision (critical in regulated industries)
-• *Containment* — preventing agentic systems from taking unintended real-world actions
+• *Alignment* - ensuring AI does what humans actually want (not just what we specified)
+• *Robustness* - behaving correctly on unusual inputs, adversarial attacks
+• *Interpretability* - understanding WHY a model made a decision (critical in regulated industries)
+• *Containment* - preventing agentic systems from taking unintended real-world actions
 
 *In Your Domain*
 SF EC data migration decisions affect people's employment records, payroll, and entitlements.
 Any ML/AI applied to HR data carries significant fairness and regulatory obligations (GDPR, employment law).
 
-📌 *Tomorrow:* Generative AI — diffusion models, image generation, video, and multimodal AI."""
+📌 *Tomorrow:* Generative AI - diffusion models, image generation, video, and multimodal AI."""
     },
     {
         "day": 26,
         "title": "Generative AI",
-        "content": """🎨 *Day 26 — Generative AI: Images, Video & Multimodal*
+        "content": """🎨 *Day 26 - Generative AI: Images, Video & Multimodal*
 
 *What is Generative AI?*
-AI that creates new content — images, audio, video, code, 3D — rather than classifying existing content.
+AI that creates new content - images, audio, video, code, 3D - rather than classifying existing content.
 
 *Two Dominant Paradigms*
 
 ━━━━━━━━━━━━━━━
-*GANs (Generative Adversarial Networks) — 2014*
+*GANs (Generative Adversarial Networks) - 2014*
 Two networks trained adversarially:
-• *Generator* — creates fake images
-• *Discriminator* — distinguishes real vs fake
+• *Generator* - creates fake images
+• *Discriminator* - distinguishes real vs fake
 They compete: Generator gets better at fooling Discriminator, which gets better at detecting fakes.
 Result: photorealistic image generation.
 
 Problems: training instability, mode collapse (generator finds one trick and repeats it).
 
 ━━━━━━━━━━━━━━━
-*Diffusion Models — 2020–present*
+*Diffusion Models - 2020–present*
 Current state of the art (Stable Diffusion, DALL-E 3, Midjourney, Sora).
 
 Training: gradually add Gaussian noise to images until pure noise → train model to reverse this process (denoise).
@@ -1184,7 +1184,7 @@ Advantages: stable training, high quality, controllable via text prompts.
 
 *Video Generation*
 Extend diffusion to temporal dimension.
-Sora (OpenAI), Runway Gen-3, Kling — model motion, physics, scene consistency across frames.
+Sora (OpenAI), Runway Gen-3, Kling - model motion, physics, scene consistency across frames.
 
 *Multimodal Models*
 Handle multiple modalities in one model:
@@ -1192,29 +1192,29 @@ Handle multiple modalities in one model:
 • Text + Audio + Video → Gemini 1.5
 
 *The Convergence*
-Everything is becoming one model: text, image, audio, video, code — all embeddings in a shared representation space.
+Everything is becoming one model: text, image, audio, video, code - all embeddings in a shared representation space.
 
-📌 *Tomorrow:* AI in Enterprise — where AI actually creates value in businesses like yours."""
+📌 *Tomorrow:* AI in Enterprise - where AI actually creates value in businesses like yours."""
     },
     {
         "day": 27,
         "title": "AI in Enterprise",
-        "content": """🏢 *Day 27 — AI in Enterprise & Your Domain*
+        "content": """🏢 *Day 27 - AI in Enterprise & Your Domain*
 
 *Where Enterprise AI Actually Creates Value*
-Not robots replacing workers — mostly: automating repetitive cognitive tasks, augmenting decision-making, extracting signal from large datasets.
+Not robots replacing workers - mostly: automating repetitive cognitive tasks, augmenting decision-making, extracting signal from large datasets.
 
 *High-ROI Enterprise Use Cases*
 
 *Document Processing*
 • Contract analysis, invoice extraction, compliance checking
-• IDP (Intelligent Document Processing) — structured extraction from unstructured docs
+• IDP (Intelligent Document Processing) - structured extraction from unstructured docs
 • Direct relevance: SF EC data migration involves massive legacy HR document ingestion
 
 *Predictive HR Analytics*
-• Attrition prediction — who's likely to leave in the next 6 months
-• Workforce planning — demand forecasting by skill and location
-• Compensation benchmarking — market data + internal equity analysis
+• Attrition prediction - who's likely to leave in the next 6 months
+• Workforce planning - demand forecasting by skill and location
+• Compensation benchmarking - market data + internal equity analysis
 
 *Intelligent Search*
 • Enterprise knowledge bases searchable by meaning, not keywords
@@ -1222,33 +1222,33 @@ Not robots replacing workers — mostly: automating repetitive cognitive tasks, 
 
 *Code Generation & Review*
 • GitHub Copilot, Cursor → 20–40% productivity gains for developers
-• ABAP code generation — still early but improving
+• ABAP code generation - still early but improving
 
 *Process Automation*
 • Agentic systems handling multi-step approval workflows
 • SF approval chain automation (stuck approval detection → your sf-workflow-monitor)
 
 *SAP + AI*
-SAP Joule — SAP's embedded AI assistant across S/4HANA, SuccessFactors.
+SAP Joule - SAP's embedded AI assistant across S/4HANA, SuccessFactors.
 Current capabilities: natural language queries, auto-populate fields, anomaly detection in time data.
 Future: autonomous HR process execution.
 
 *The Honest Assessment*
 Most "enterprise AI" is still RAG + LLM wrapper over internal documents.
-The companies winning are those with clean, structured data — exactly what SF EC data migration creates.
+The companies winning are those with clean, structured data - exactly what SF EC data migration creates.
 
 Your migration work is foundational infrastructure for enterprise AI. The better the data model, the more powerful the AI layer on top.
 
-📌 *Tomorrow:* RLHF — the technique that makes LLMs helpful and aligned."""
+📌 *Tomorrow:* RLHF - the technique that makes LLMs helpful and aligned."""
     },
     {
         "day": 28,
         "title": "RLHF",
-        "content": """🎯 *Day 28 — Reinforcement Learning from Human Feedback (RLHF)*
+        "content": """🎯 *Day 28 - Reinforcement Learning from Human Feedback (RLHF)*
 
 *The Problem RLHF Solves*
 A base LLM trained on internet text can generate harmful, dishonest, or unhelpful content.
-Pre-training optimises for predicting text — not for being a useful assistant.
+Pre-training optimises for predicting text - not for being a useful assistant.
 RLHF aligns the model's behaviour with human values and preferences.
 
 *The Three-Stage Pipeline*
@@ -1266,8 +1266,8 @@ RLHF aligns the model's behaviour with human values and preferences.
 
 *Stage 3: RL Optimisation (PPO)*
 • Use the reward model as the reward signal
-• Optimise the LLM using Proximal Policy Optimisation (PPO) — an RL algorithm
-• Constraint: don't diverge too far from the SFT model (KL penalty) — prevents reward hacking
+• Optimise the LLM using Proximal Policy Optimisation (PPO) - an RL algorithm
+• Constraint: don't diverge too far from the SFT model (KL penalty) - prevents reward hacking
 
 *Reward Hacking*
 The model finds ways to score highly on the reward model without being genuinely good.
@@ -1275,27 +1275,27 @@ Example: verbosity (longer answers scored higher) → model learns to pad respon
 The reward model is an imperfect proxy. Optimise it too hard → Goodhart's Law.
 
 *Modern Alternatives*
-• *DPO (Direct Preference Optimisation)* — eliminates the separate reward model; simpler, more stable
-• *Constitutional AI (Anthropic)* — model critiques and revises its own outputs against a constitution
-• *RLAIF* — AI feedback instead of human feedback (scalable but less grounded)
+• *DPO (Direct Preference Optimisation)* - eliminates the separate reward model; simpler, more stable
+• *Constitutional AI (Anthropic)* - model critiques and revises its own outputs against a constitution
+• *RLAIF* - AI feedback instead of human feedback (scalable but less grounded)
 
 *Why This Matters*
 RLHF is what turns a raw language model into Claude, ChatGPT, or Gemini.
 Without it: capable but uncontrollable.
 With it: capable AND helpful, harmless, and honest.
 
-📌 *Tomorrow:* Frontier Models & the AGI Debate — where is AI actually headed?"""
+📌 *Tomorrow:* Frontier Models & the AGI Debate - where is AI actually headed?"""
     },
     {
         "day": 29,
         "title": "Frontier Models & the AGI Debate",
-        "content": """🔭 *Day 29 — Frontier Models & the AGI Debate*
+        "content": """🔭 *Day 29 - Frontier Models & the AGI Debate*
 
 *What are Frontier Models?*
-The most capable AI systems at any point in time — pushing the boundary of what's possible.
+The most capable AI systems at any point in time - pushing the boundary of what's possible.
 Current frontier: GPT-4o, Claude 3.5/4, Gemini 1.5 Ultra, Llama 3 405B.
 
-*Scaling Laws — The Engine of Progress*
+*Scaling Laws - The Engine of Progress*
 Empirical finding: model capability scales predictably with:
 compute × data × parameters
 
@@ -1309,7 +1309,7 @@ At sufficient scale, new abilities appear with no explicit training:
 • Mathematical problem-solving
 • Theory of mind (limited)
 
-No one fully understands WHY this happens — it's one of the deepest open questions in AI.
+No one fully understands WHY this happens - it's one of the deepest open questions in AI.
 
 *The AGI Debate*
 
@@ -1323,23 +1323,23 @@ Current architectures are fundamentally limited. LLMs are sophisticated pattern 
 Nobody knows. "AGI" isn't even well-defined. Current systems are genuinely impressive and genuinely limited in specific ways.
 
 *Trends to Watch*
-• *Test-time compute* — models thinking longer (chain-of-thought, o1/o3 style) rather than just bigger
-• *Multimodal* — text + image + audio + video as native inputs
-• *Agents* — models taking real-world actions autonomously
-• *Open source* — Llama, Mistral, Qwen closing the gap with proprietary models
-• *Specialised models* — smaller, domain-specific models outperforming giant general models on narrow tasks
+• *Test-time compute* - models thinking longer (chain-of-thought, o1/o3 style) rather than just bigger
+• *Multimodal* - text + image + audio + video as native inputs
+• *Agents* - models taking real-world actions autonomously
+• *Open source* - Llama, Mistral, Qwen closing the gap with proprietary models
+• *Specialised models* - smaller, domain-specific models outperforming giant general models on narrow tasks
 
 *What This Means For You*
-AI is a platform shift — like mobile or cloud.
+AI is a platform shift - like mobile or cloud.
 The practitioners who understand both the capabilities AND the limitations will build the most valuable things.
 You're already doing this.
 
-📌 *Tomorrow:* Day 30 — Full review + your personalised path forward."""
+📌 *Tomorrow:* Day 30 - Full review + your personalised path forward."""
     },
     {
         "day": 30,
         "title": "Full Review & Your Path Forward",
-        "content": """🎓 *Day 30 — Full Review & Your Personalised Path Forward*
+        "content": """🎓 *Day 30 - Full Review & Your Personalised Path Forward*
 
 Congratulations. 30 days. The full ML/AI stack.
 
@@ -1391,7 +1391,7 @@ Given your stack (Python, GitHub Actions, Oracle Cloud, SF OData, Hermes agent):
    SF API calls + GitHub triggers + calendar = genuine autonomous agent.
 
 3. *Learn PyTorch basics*
-   Not to train models from scratch — to understand fine-tuning and embeddings at code level.
+   Not to train models from scratch - to understand fine-tuning and embeddings at code level.
    fast.ai course is the best entry point.
 
 4. *Explore LangChain or LlamaIndex*
