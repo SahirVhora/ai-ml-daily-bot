@@ -9,7 +9,6 @@ venv/
 .venv/
 
 # Bot state
-current_day.txt
 bot.log
 
 # IDE
