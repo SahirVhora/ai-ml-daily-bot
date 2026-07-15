@@ -1,2 +1,4 @@
-python-telegram-bot>=20.7
-python-dotenv>=0.19
+# Pinned after checking the current PyPI releases. Both support Python 3.12,
+# which is the version used by the scheduled workflow.
+python-telegram-bot==22.8
+python-dotenv==1.2.2
