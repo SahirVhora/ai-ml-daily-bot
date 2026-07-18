@@ -53,8 +53,15 @@ def _get_env_or_die(key: str) -> str:
     return value
 
 
-TELEGRAM_BOT_TOKEN = _get_env_or_die("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = _get_env_or_die("TELEGRAM_CHAT_ID")
+TELEGRAM_BOT_TOKEN: str | None = None
+TELEGRAM_CHAT_ID: str | None = None
+
+
+def _init_config() -> None:
+    """Load required environment variables at runtime (not import time)."""
+    global TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+    TELEGRAM_BOT_TOKEN = _get_env_or_die("TELEGRAM_BOT_TOKEN")
+    TELEGRAM_CHAT_ID = _get_env_or_die("TELEGRAM_CHAT_ID")
 
 
 # ── Curriculum ─────────────────────────────────────────────────────────
@@ -1461,6 +1468,7 @@ async def increment_day(current: int) -> None:
 
 async def main() -> None:
     """Send today's lesson and increment counter."""
+    _init_config()
     bot = Bot(token=TELEGRAM_BOT_TOKEN)
 
     # Verify bot connection
@@ -1515,6 +1523,7 @@ if __name__ == "__main__":
             sys.exit(2)
 
         async def run_specific() -> None:
+            _init_config()
             bot = Bot(token=TELEGRAM_BOT_TOKEN)
             ok = await send_lesson(bot, day_override)
             if ok:
