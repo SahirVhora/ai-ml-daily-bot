@@ -17,7 +17,8 @@ The 30-day curriculum covers:
 
 - Lessons are stored in `bot.py` as a 30-day curriculum.
 - `current_day.txt` tracks which lesson to send next.
-- Each run sends the current lesson, increments the counter, and commits the updated state.
+- Each run sends the current lesson and increments the counter.
+- The GitHub Actions workflow commits the updated `current_day.txt` back to the repo after each run.
 - When the curriculum finishes, the bot sends a completion message and stops silently on subsequent runs.
 
 ## Quick start
@@ -46,7 +47,9 @@ export TELEGRAM_CHAT_ID="your-chat-id"
 
 ### Daily automated delivery
 
-See [SETUP.md](SETUP.md) for instructions on deploying via GitHub Actions.
+The `.github/workflows/` directory contains the GitHub Actions workflow that runs `bot.py` daily at 8 AM. See [SETUP.md](SETUP.md) for setup instructions.
+
+> Note: Local smoke tests will fail without `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` set. This is expected — see [RUNTIME.md](RUNTIME.md) for details.
 
 ## Files
 
