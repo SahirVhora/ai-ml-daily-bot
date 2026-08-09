@@ -1,7 +1,5 @@
 name: Daily AI/ML Lesson
 on:
-  schedule:
-    - cron: '0 8 * * *'   # 8 AM daily
   workflow_dispatch:        # manual trigger via GitHub UI
 
 jobs:
